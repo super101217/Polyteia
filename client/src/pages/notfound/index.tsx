@@ -1,4 +1,5 @@
+import { NotFoundContainer } from '@/containers';
 
 export function NotFoundPage() {
-  return <></>;
+  return <NotFoundContainer />;
 }

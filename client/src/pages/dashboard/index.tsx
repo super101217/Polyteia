@@ -1,7 +1,8 @@
+import { DashboardContainer } from '@/containers';
 import { WithLayout } from '@/layouts';
 
 function Dashboard() {
-  return <></>;
+  return <DashboardContainer />;
 }
 
 export const DashboardPage = WithLayout(Dashboard);
