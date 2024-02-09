@@ -21,8 +21,8 @@ export function DashboardViewComponent(props: Props) {
   const [chartType, setChartType] = useState<string>('Bar');
   const { isLoading, randNumbers, savedNumbers } = props;
 
-  const lineSavedData: LineData[] = generateLineData(savedNumbers, '#00B797');
-  const lineRandData: LineData[] = generateLineData(randNumbers, '#00B797');
+  const lineSavedData: LineData[] = generateLineData(savedNumbers, 'hsl(33, 70%, 50%)');
+  const lineRandData: LineData[] = generateLineData(randNumbers, 'hsl(33, 70%, 50%)');
   const barSavedData: BarDatum[] = generateBarData(savedNumbers);
   const barRandData: BarDatum[] = generateBarData(randNumbers);
 

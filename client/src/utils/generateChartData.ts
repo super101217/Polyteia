@@ -15,6 +15,6 @@ export const generateBarData = (numbers: number[]) => {
   return numbers.map((number, index) => ({
     numberGroup: `x${index}`,
     number: number,
-    numberColor: 'hsl(144, 70%, 50%)',
+    numberColor: 'hsl(33, 70%, 50%)',
   }));
 };
