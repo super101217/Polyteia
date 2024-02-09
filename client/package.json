@@ -9,8 +9,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test:server": "vite dev --port 4173",
-    "test:cy:open": "cypress open",
-    "prepare": "husky install"
+    "test:cy:open": "cypress open"
   },
   "dependencies": {
     "@nivo/bar": "^0.84.0",

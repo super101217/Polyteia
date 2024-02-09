@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 interface ButtonProps {
-  isActive: boolean;
+  isactive: string;
 }
 
 export const ButtonGroup = styled.div`
@@ -14,9 +14,9 @@ export const Button = styled.button<ButtonProps>`
   padding: 10px;
   border-radius: 3px;
   border: 1px solid;
-  border-color: ${(props) => props.isActive ? '#afb7ff' : '#1f009d'};
-  background-color: ${(props) => props.isActive ? '#afb7ff' : '#1f009d'};
-  color: ${(props) => props.isActive ? '#1f009d' : 'white'};;;
+  border-color: ${(props) => (props.isactive ? '#afb7ff' : '#1f009d')};
+  background-color: ${(props) => (props.isactive ? '#afb7ff' : '#1f009d')};
+  color: ${(props) => (props.isactive ? '#1f009d' : 'white')};
   outline: none;
   cursor: pointer;
 

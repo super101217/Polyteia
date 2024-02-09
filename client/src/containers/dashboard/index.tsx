@@ -9,8 +9,8 @@ export function DashboardContainer() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(AppActions.numeric.getSavedNumbers('/numeric/saved'));
-    dispatch(AppActions.numeric.getRandNumbers('/numeric/rand'));
+    dispatch(AppActions.numeric.getSavedNumbers());
+    dispatch(AppActions.numeric.getRandNumbers());
   }, []);
 
   const { isLoading, randNumbers, savedNumbers } = useSelector(
