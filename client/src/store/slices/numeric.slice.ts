@@ -22,7 +22,6 @@ const numericSlice = createSlice({
   reducers: {
     getSavedNumbers(
       state: NumericState,
-      _action: PayloadAction<Numeric.GetSavedNumberRequestPayload>
     ) {
       state.isLoading = true;
     },
@@ -42,7 +41,6 @@ const numericSlice = createSlice({
     },
     getRandNumbers(
       state: NumericState,
-      _action: PayloadAction<Numeric.GetRandNumberRequestPayload>
     ) {
       state.isLoading = true;
     },

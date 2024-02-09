@@ -1,14 +1,11 @@
 import { call, put } from 'redux-saga/effects';
 import { request } from 'utils';
-import { AppActions, Numeric, ResponseGenerator } from 'store';
-import { PayloadAction } from '@reduxjs/toolkit';
+import { AppActions, ResponseGenerator } from 'store';
 
-export function* getSavedNumbersSaga(
-  action: PayloadAction<Numeric.GetSavedNumberRequestPayload>
-) {
+export function* getSavedNumbersSaga() {
   try {
     const response: ResponseGenerator<number[]> = yield call(request, {
-      url: `${action.payload}`,
+      url: `/numeric/saved`,
       method: 'GET',
     });
     const responseData = response.data;
@@ -17,12 +14,10 @@ export function* getSavedNumbersSaga(
     yield put(AppActions.numeric.getSavedNumbersError(err));
   }
 }
-export function* getRandNumbersSaga(
-  action: PayloadAction<Numeric.GetSavedNumberRequestPayload>
-) {
+export function* getRandNumbersSaga() {
   try {
     const response: ResponseGenerator<number[]> = yield call(request, {
-      url: `${action.payload}`,
+      url: `/numeric/rand`,
       method: 'GET',
     });
     const responseData = response.data;
