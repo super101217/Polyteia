@@ -1,6 +1,8 @@
 import "dotenv/config";
 import { DataSourceOptions } from "typeorm";
 
+import { NumericEntity } from "entities";
+
 const { DB_HOST, DB_PORT, DB_USERNAME, DB_PASSWORD, DB_NAME } = process.env;
 
 export const dbOptions: DataSourceOptions = {
@@ -12,7 +14,7 @@ export const dbOptions: DataSourceOptions = {
   database: DB_NAME,
   logging: false,
   synchronize: false,
-  entities: [],
+  entities: [NumericEntity],
   extra: {
     connectionLimit: 10,
   },
