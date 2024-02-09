@@ -39,6 +39,7 @@ export const LineChartComponent: React.FC<Props> = ({ data }) => {
           legendOffset: -40,
           legendPosition: 'middle',
         }}
+        colors={{ scheme: 'nivo' }}
         pointSize={10}
         pointColor={{ theme: 'background' }}
         pointBorderWidth={2}
