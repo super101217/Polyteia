@@ -1,5 +1,3 @@
-export type GetSavedNumberRequestPayload = string;
-export type GetRandNumberRequestPayload = string;
 
 export type GetSavedNumberSuccessPayload = number[];
 

@@ -13,13 +13,13 @@ export const TopBarComponent: React.FC<Props> = ({
   return (
     <ButtonGroup>
       <Button
-        isActive={chartType === 'Bar'}
+        isactive={chartType === 'Bar'? 'active' : ''}
         onClick={() => setChartType('Bar')}
       >
         Bar Chart
       </Button>
       <Button
-        isActive={chartType === 'Line'}
+        isactive={chartType === 'Line'? 'active': ''}
         onClick={() => setChartType('Line')}
       >
         Line Chart
