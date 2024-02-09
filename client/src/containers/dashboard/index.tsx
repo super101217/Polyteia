@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { DashboardViewComponent } from '@/components';
 
 import { AppActions, RootState } from '@/store';
 
@@ -17,6 +18,10 @@ export function DashboardContainer() {
   );
 
   return (
-    <></>
+    <DashboardViewComponent
+      isLoading={isLoading}
+      randNumbers={randNumbers}
+      savedNumbers={savedNumbers}
+    />
   );
 }

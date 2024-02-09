@@ -1,4 +1,5 @@
+import { NotFoundViewComponent } from '@/components';
 
 export function NotFoundContainer() {
-  return <></>;
+  return <NotFoundViewComponent />;
 }
