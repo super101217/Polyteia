@@ -56,7 +56,7 @@ const numericSlice = createSlice({
       action: PayloadAction<Numeric.GetRandNumberFailurePayload>
     ) {
       state.error = action.payload;
-      state.isLoading = false;
+      state.isLoading = false ;
     },
   },
 });
